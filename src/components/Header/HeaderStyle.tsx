@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const HeaderStyle = styled.div`
   width: 100%;
-  padding-top: .45rem/* 20px */;
-  padding-bottom: .45rem/* 20px */;
-  align-items: center;  
-  background-color: #153559;  
-  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;    
+  background-color: var(--color-primary);
+  display: flex;  
+  margin-bottom: 10px;
 
   #container-logo {
     display: flex;
@@ -18,19 +19,21 @@ export const HeaderStyle = styled.div`
 
   #logo {
     display: flex;
+    justify-content: center;
+    align-items: center;
     svg {
-      width: 38px;
-      height: 70px;    
-      color: white;
-      margin-left: 20px; 
-      padding: 0.5rem; 
-      display: flex;
+      width: 100px;
+      height: 35px;    
+      color: white;            
     }  
-    h2 {
-      color: #dde192;
-      margin-left: 10px;
-      display: flex;
-    }
+  }
+
+  #header-h1 { 
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px;    
   }
 
   #list {
@@ -43,19 +46,18 @@ export const HeaderStyle = styled.div`
     display: flex;    
     float: left;
     padding: 0px 20px;
-    list-style-type: none;
+       
   }
 
   #list ul li {
     padding: 10px;
-    text-decoration: none;    
+            
   }
 
-  #list ul li a {
-    text-decoration: none;
+  #list ul li a {    
     color: white;
-  }
- 
-
- 
+    &:hover {
+      color:#ccc;
+    }    
+  } 
 `

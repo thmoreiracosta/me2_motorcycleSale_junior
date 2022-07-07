@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SubscribeStyle = styled.div`
+export const IndexStyle = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,24 +31,25 @@ export const SubscribeStyle = styled.div`
   }
 
   h4 {
+    color: var(--color-primary);
     margin-bottom: .5rem/* 16px */;
     margin-top: 2.5rem/* 32px */;    
     font-size: 17px;
   }
 
-  h5 {
+  h5 {    
     font-size: 20px;
     display: block;
     margin:0;
   }
 
-#accredited-onli {
+#accredited-onli {  
     display: flex;
     gap: 1rem/* 16px */;
     margin-top: 1rem/* 24px */;
   }
 
-  #image-accredited {
+  #image-accredited {    
     margin-bottom: 2rem;
     height: 4rem/* 64px */;    
     width: 4rem/* 64px */;
@@ -59,6 +60,7 @@ export const SubscribeStyle = styled.div`
   } 
 
   #name-accredited {
+    color: white;
     margin: 0.25rem/* 4px */;
   }
 
@@ -66,11 +68,17 @@ export const SubscribeStyle = styled.div`
     color: white;
     margin-top: 32px;
     font-size: 2.5rem;    
-    line-height: 1.25;    
+    line-height: 1.25;     
   }  
+
+  #destack {
+    color: var(--color-primary);    
+    font-size: 2.5rem;    
+  }
   
   p {
-    color: white;    
+    color: white;
+    margin-right: 50px;
   }
 
   form {
@@ -81,21 +89,23 @@ export const SubscribeStyle = styled.div`
   }
 
   span {
+    color: #ccc;
     font-size: 16px;
     display: block;
   }
 
   #container-subscribe {  
-    background-color: #40566e;   
+    background-color: var(--color-fourth);   
     padding: 2rem/* 32px */;
-    border-width: 1px;
+    border: 5px solid #fff;
+    border-width: 3px;
     border-radius: 0.25rem/* 4px */; 
     width: 28rem;   
   }
 
-  strong {
-    
+  strong {    
     color: white;
+    text-align: center;
     font-size: 1.5rem/* 24px */;
     line-height: 2rem/* 32px */;
     margin-bottom: 1.5rem/* 24px */;
@@ -115,26 +125,35 @@ export const SubscribeStyle = styled.div`
     width: 25.2rem;
   }
 
-  button {    
-    margin-top: 1rem/* 16px */;
-    text-transform: uppercase;
-    padding-top: 1rem/* 16px */;
-    padding-bottom: 1rem/* 16px */;
-    border-radius: 0.25rem/* 4px */;
-    font-weight: 700;
-    font-size: 0.875rem/* 14px */;
-    line-height: 1.25rem/* 20px */;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-    opacity: 0.5;
+  #button { 
+    color: #fff;
+    box-shadow: #081b3e;
+    padding: 40px;
+    border-radius: 3%;
+    align-self: center;
+    background-color: var(--color-primary);
+    text-decoration: none;    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 40px 40px var(--color-primary) inset, 0 0 0 0 var(--color-primary);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+      
 
-    &:hover { background-color: #416a7d; }
-    
+    &:hover {
+      box-shadow: 0 0 10px 0 var(--color-fourth) inset, 0 0 10px 4px #ccc;
+    }    
+}  
 
-
+  #button-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-
- 
+  #button-container ul {    
+    margin-top: 10px;
+    padding: 20px;    
+  } 
 `
