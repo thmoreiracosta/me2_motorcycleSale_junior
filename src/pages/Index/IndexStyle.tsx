@@ -67,6 +67,7 @@ export const IndexStyle = styled.div`
   h1 {
     color: white;
     margin-top: 32px;
+    margin-bottom: 15px;
     font-size: 2.5rem;    
     line-height: 1.25;     
   }  
@@ -105,7 +106,7 @@ export const IndexStyle = styled.div`
 
   strong {    
     color: white;
-    text-align: center;
+    text-align: justify;
     font-size: 1.5rem/* 24px */;
     line-height: 2rem/* 32px */;
     margin-bottom: 1.5rem/* 24px */;
@@ -128,7 +129,7 @@ export const IndexStyle = styled.div`
   #button { 
     color: #fff;
     box-shadow: #081b3e;
-    padding: 40px;
+    padding: 20px;
     border-radius: 3%;
     align-self: center;
     background-color: var(--color-primary);
@@ -138,9 +139,8 @@ export const IndexStyle = styled.div`
     border: 1px solid #ccc;
     box-shadow: 0 0 40px 40px var(--color-primary) inset, 0 0 0 0 var(--color-primary);
     -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
+    transition: all 300ms ease-in-out;
       
-
     &:hover {
       box-shadow: 0 0 10px 0 var(--color-fourth) inset, 0 0 10px 4px #ccc;
     }    

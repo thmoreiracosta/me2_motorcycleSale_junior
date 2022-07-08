@@ -18,9 +18,10 @@ export const HeaderStyle = styled.div`
   }
 
   #logo {
-    display: flex;
-    justify-content: center;
+    display: flex;    
     align-items: center;
+    margin-top: 0;
+    
     svg {
       width: 100px;
       height: 35px;    
@@ -33,7 +34,9 @@ export const HeaderStyle = styled.div`
     text-align: center;
     justify-content: center;
     margin: auto;
-    padding: 0px;    
+    padding: 0px; 
+    font-size: 2.5rem;    
+    line-height: 1.25;    
   }
 
   #list {

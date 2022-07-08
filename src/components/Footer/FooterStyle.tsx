@@ -19,10 +19,11 @@ export const FooterStyle = styled.div`
 
   p {
     font-size: small;
+    font-weight: 400;
     color: var(--color-secondary);
     text-align: center;    
-  }
-  
+  }  
+ 
   #title-footer {
     font-size: 16px;
     text-transform: uppercase;

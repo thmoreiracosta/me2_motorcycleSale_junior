@@ -7,9 +7,18 @@ export default function Home() {
   return (
     <HomeStyle>      
       <Header />
+      <section>
+        <div>
+          <div>
+            <div>
+              <h1>welcome</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates nihil, sunt nemo fugit iusto sed. Quisquam quasi dolore, nulla similique, neque amet suscipit, inventore recusandae beatae tempora exercitationem quidem!</p>              
+            </div>
+          </div>
+        </div>
+      </section>
       <Card />
-      <h1>home vendas</h1>
-      <h3>Testando</h3>
+      
       <Footer />
     </HomeStyle>
   )

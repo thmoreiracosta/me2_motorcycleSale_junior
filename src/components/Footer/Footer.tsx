@@ -2,25 +2,25 @@ import { FooterStyle } from "./FooterStyle";
 
 export default function Footer() {
   return (
-    <FooterStyle>
+    <FooterStyle>      
       <div id="container-footer">
         <nav>
           <div id="div-footer_1">
             <h5 id="title-footer">
-              motorcycle components
+              motorcycle com você
             </h5>
             <ul id="menu-footer">
               <li>
                 <a href="/tour">Tour</a>
               </li>
               <li>
-                <a href="/tour">Help</a>
+                <a href="/tour">Ajuda</a>
               </li>
               <li>
                 <a href="/tour">Chat</a>
               </li>
               <li>
-                <a href="/tour">Contact</a>
+                <a href="/tour">Contato</a>
               </li>
               <li>
                 <a href="/tour">Feedback</a>
@@ -36,28 +36,19 @@ export default function Footer() {
                 <a href="#">Motorcycle</a>
               </li>
               <li>
-                <a href="#">Teams</a>
+                <a href="#">Equipes</a>
               </li>
               <li>
-                <a href="#">Advertising</a>
+                <a href="#">Publicidade</a>
               </li>
               <li>
-                <a href="#">Collectives</a>
+                <a href="#">Sobre</a>
               </li>
               <li>
-                <a href="#">Talent</a>
+                <a href="#">Impresa</a>
               </li>
               <li>
-                <a href="#">Aboult</a>
-              </li>
-              <li>
-                <a href="#">Press</a>
-              </li>
-              <li>
-                <a href="#">Cool</a>
-              </li>
-              <li>
-                <a href="#">Privacy Police</a>
+                <a href="#">Política de privacidade</a>
               </li>
             </ul>
           </div>
@@ -68,28 +59,28 @@ export default function Footer() {
               </h5>
               <ul id="menu-footer">
                 <li>
-                  <a href="#">Technology</a>
+                  <a href="#">Tecnologia</a>
                 </li>
                 <li>
-                  <a href="#">Utilities</a>
+                  <a href="#">Utilidades</a>
                 </li>
                 <li>
-                  <a href="#">Entities</a>
+                  <a href="#">Entidades</a>
                 </li>
                 <li>
-                  <a href="#">Professional</a>
+                  <a href="#">Profissional</a>
                 </li>
                 <li>
                   <a href="#">Network</a>
                 </li>
                 <li>
-                  <a href="#">Life's</a>
+                  <a href="#">Carreira</a>
                 </li>
                 <li>
-                  <a href="#">Sales</a>
+                  <a href="#">Vendas</a>
                 </li>
                 <li>
-                  <a href="#">Public</a>
+                  <a href="#">Público</a>
                 </li>
               </ul>
             </div>
@@ -180,9 +171,7 @@ export default function Footer() {
             Copyright by Thiago Costa - Front-end Developer © 2022 Stack Exchange Inc; user contributions licensed under cc by-sa. rev 2022.7.6.42527
           </p>
         </div>
-
       </div>
-
     </FooterStyle>
   )
 }
