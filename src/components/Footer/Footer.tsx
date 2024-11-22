@@ -5,11 +5,11 @@ export default function Footer() {
     <FooterStyle>      
       <div id="container-footer">
         <nav>
-          <div id="div-footer_1">
-            <h5 id="title-footer">
+          <div className="div-footer">
+            <h5 className="title-footer">
               motorcycle com você
             </h5>
-            <ul id="menu-footer">
+            <ul className="menu-footer">
               <li>
                 <a href="/tour">Tour</a>
               </li>
@@ -27,11 +27,11 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div id="div-footer_1">
-            <h5 id="title-footer">
+          <div className="div-footer">
+            <h5 className="title-footer">
               motorcycle company
             </h5>
-            <ul id="menu-footer">
+            <ul className="menu-footer">
               <li>
                 <a href="#">Motorcycle</a>
               </li>
@@ -53,11 +53,11 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <div id="div-footer_1">
-              <h5 id="title-footer">
+            <div className="div-footer">
+              <h5 className="title-footer">
                 motorcycle network
               </h5>
-              <ul id="menu-footer">
+              <ul className="menu-footer">
                 <li>
                   <a href="#">Tecnologia</a>
                 </li>

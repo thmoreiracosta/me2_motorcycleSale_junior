@@ -139,7 +139,7 @@ export const LoginStyle = styled.div`
     width: 100%;
   }
 
-  #input {
+  .input {
     margin-top: 6px;
     padding: 6px;
     width: 100%;    
@@ -205,14 +205,12 @@ export const LoginStyle = styled.div`
   #links-container a {
     margin-left: 8px;
     color: var(--color-primary);
+    &:hover {
+      color: var(--color-secondary);
+    }
   }
 
   #links-container svg {
     margin-left: 4px;
-  }
- 
-
- 
-
-  
+  }  
 `

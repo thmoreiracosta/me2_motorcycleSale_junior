@@ -2,61 +2,30 @@ import { CardStyle } from "./CardStyle";
 import card1 from '../../assets/Kawasaki-H2-SX-2018-1.jpg'
 import card2 from '../../assets/ducati-red.jpg'
 import card3 from '../../assets/kawasaki_ninja_h2r_2015_02.jpg'
+import { Link } from "react-router-dom";
+import { Moto } from "../../types/moto";
 
-interface CardProps {
-  image: string;
-  name: string;
-  marca: string;
-  cilindrada: string;  
+type Props = {
+  moto: Moto;
 }
 
-export default function Card(props: CardProps) {
+export default function Card({ moto }: Props) {
   return (
     <CardStyle>
-      <section>
-        <div>
-          <div>
-            <div>
-              <h1>
-                adlakdlaskdalskdlaskdlaksd
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis officiis inventore eius. Officia voluptatibus quae architecto amet ab consequuntur labore perspiciatis harum? Soluta eum architecto impedit, minus nesciunt laudantium eos.
-              </p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <img src={card1} alt="" />
-                <div>
-                  <h3>asdadafdasfdasfdasdfasdf</h3>
-                  <p>asdfasdfasfasdfasdfasdfasdfasdfasdfasdfasfdasdfadfasdf</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src={card2} alt="" />
-                <div>
-                  <h3>asdadafdasfdasfdasdfasdf</h3>
-                  <p>asdfasdfasfasdfasdfasdfasdfasdfasdfasdfasfdasdfadfasdf</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src={card3} alt="" />
-                <div>
-                  <h3>asdadafdasfdasfdasdfasdf</h3>
-                  <p>asdfasdfasfasdfasdfasdfasdfasdfasdfasdfasfdasdfadfasdf</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div>
+        <img
+          className="dsmovie-movie-card-image"
+          src={moto.image}
+          alt={moto.title}
+        />
+        <div className="dsmovie-card-bottom-container">
+          <h3>{moto.title}</h3>        
+
+          <Link to={`/home/${moto.id}`}>
+            <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+          </Link>
         </div>
-      </section>
-      
+      </div>
     </CardStyle>
   )
 }

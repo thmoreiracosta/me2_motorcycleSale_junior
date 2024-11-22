@@ -22,13 +22,24 @@ export default function Login() {
               <a id="link-logo" href="/">TMMotos Brazil</a>
             </div>
             <div id="container-buttons">
-              <button id="button-google" type="button">
+              
+              <button 
+              id="button-google" 
+              type="button"
+              onClick={() => {
+                const url = 'https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:3000/auth/google&response_type=code&client_id=1031126310130-2573066793347781037.apps.googleusercontent.com&approval_prompt=force';
+                const windowFeatures = 'width=500,height=600,scrollbars=yes,resizable=yes';
+                window.open(url, 'GoogleAuth', windowFeatures);
+              }}
+              
+              >                
                 <svg
                   aria-hidden="true"
                   className="native svg-icon iconGoogle"
                   width="35"
                   height="25"
                   viewBox="0 0 18 18">
+                    
                   <path d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18Z"
                     fill="#4285F4">
                   </path>
@@ -78,7 +89,7 @@ export default function Login() {
                   <label htmlFor="">Email</label>
                   <div>
                     <input
-                      id="input"
+                      className="input"
                       placeholder="Seu email aqui..."
                       required
                       type="text"
@@ -92,7 +103,7 @@ export default function Login() {
                   </div>
                   <div>
                     <input
-                      id="input"
+                      className="input"
                       placeholder="Digite sua senha..."
                       required
                       type="text"

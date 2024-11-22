@@ -24,7 +24,7 @@ export const FooterStyle = styled.div`
     text-align: center;    
   }  
  
-  #title-footer {
+  .title-footer {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
@@ -32,13 +32,13 @@ export const FooterStyle = styled.div`
     color: var(--color-secondary);   
   } 
 
-  #div-footer_1 {   
+  .div-footer {   
     flex-grow: 5;
     flex-shrink: 0;
     flex-basis: auto;
   } 
 
-  #menu-footer a {
+  .menu-footer a {
     color: var(--color-primary);
     padding: 2px 0 ;
     display: inline-block;

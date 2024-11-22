@@ -19,16 +19,12 @@ export default function Header() {
             <h1 id="header-h1">TMMotos Brazil</h1>
           </div>
         </div>
-
         <div id="list">
           <ul>
             <li><a href="/home">Home</a></li>
             <li><a href="#">Fale conosco</a></li>
             <li><a href="#">Sobre</a></li>
-          </ul>
-          <div>
-            <a href=""></a>
-          </div>
+          </ul>          
         </div>
       </div>
     </HeaderStyle>

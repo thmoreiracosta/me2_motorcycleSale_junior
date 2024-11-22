@@ -55,12 +55,12 @@ export default function Index() {
             <div id="button-container">
               <ul>
                 <li>
-                  <a id="button" href="/user/login">Iniciar sessão</a>
+                  <a className="button" href="/user/login">Iniciar sessão</a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a id="button" href="/user/register">Inscreva-se</a>
+                  <a className="button" href="/user/register">Inscreva-se</a>
                 </li>
               </ul>
             </div>

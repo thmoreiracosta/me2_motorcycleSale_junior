@@ -60,7 +60,10 @@ export const HeaderStyle = styled.div`
   #list ul li a {    
     color: white;
     &:hover {
-      color:#ccc;
+      background-color: #ffffff;
+      color: var(--color-primary);
+      padding: 8px;
+      border-radius: 12px;
     }    
   } 
 `

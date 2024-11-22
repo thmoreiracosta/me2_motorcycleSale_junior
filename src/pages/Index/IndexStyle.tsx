@@ -126,7 +126,7 @@ export const IndexStyle = styled.div`
     width: 25.2rem;
   }
 
-  #button { 
+  .button { 
     color: #fff;
     box-shadow: #081b3e;
     padding: 20px;
@@ -152,7 +152,7 @@ export const IndexStyle = styled.div`
     align-items: center;
   }
 
-  #button-container ul {    
+  #button-container ul {
     margin-top: 10px;
     padding: 20px;    
   } 
